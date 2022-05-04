@@ -155,3 +155,4 @@ def show_exam_result(request, course_id, submission_id):
     return  render(request, 'onlinecourse/exam_result_bootstrap.html', context)
 
 
+2

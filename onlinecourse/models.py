@@ -128,7 +128,7 @@ class Question(models.Model):
     # Other fields and methods you would like to design
 class Choice(models.Model):
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
-    text = models.CharField(null=False, max_length=30, default='Choice')
+    text = models.CharField(null=False, max_length=200, default='Choice')
     correct = models.BooleanField(default=True)
 
 
